@@ -1,14 +1,11 @@
 # Welcome to Kalesha's TechFusion
 
-👋 Kalesha Gagguturu
+👋 I want to share my knwoledge and experience here to help as much people as possible.
 
-👀 Interested in Cyber security projects
+👀 linkedin.com/in/kalesha-gagguturu-1743087b
 
-🌱 Learn new things on every day
+🌱 @KaleshaTechFusion
 
-💞️ I am trying to share my knwoledge and experience here to help as much people as possible.
+💞️ https://www.youtube.com/channel/UCLwMEOYFlNuFsNrjbBb0eGw
 
 📫 gagguturu.kalesha@gmail.com
-    linkedin.com/in/kalesha-gagguturu-1743087b
-    https://www.youtube.com/channel/UCLwMEOYFlNuFsNrjbBb0eGw
-    @KaleshaTechFusion
