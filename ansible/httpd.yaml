@@ -1,0 +1,25 @@
+---
+- name: Configuring httpd
+  hosts: all
+  tasks:
+    - name: Installing httpd
+      ansible.builtin.yum:
+        name: httpd
+        state: installed
+      tags: install
+    - name: start httpd service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+      tags: start httpd
+    - name: configuring firewall rules
+      ansible.builtin.firewalld:
+        port: 80/tcp
+        service: httpd
+        source: 192.0.0.0/24
+        zone: public
+        state: enabled
+        permanent: yes
+        immediate: yes
+      tags: enable firewall rules
+...

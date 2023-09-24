@@ -1,0 +1,16 @@
+---
+- name: NGINX Installation
+  hosts: all
+  become: true
+  tasks:
+  - name: Nginx installation in Debian family
+    ansible.builtin.apt:
+      name: nginx
+      state: present
+    when: ansible_os_family == "Debian" and ansible_distribution_version == "16.04"
+  - name: NGINX installation in Redhat family
+    ansible.builtin.yum:
+      name: nginx
+      state: present
+    when: ansible_os_family == "Redhat" or ansible_os_family == "SUSE"
+...
