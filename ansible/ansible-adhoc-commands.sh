@@ -1,6 +1,6 @@
 ansible --version
 ansible-inventory -y --list
-ansible --list-hosts
+ansible --list-hosts all
 ansible-config --version
 ansible-doc -l
 ansible -m ping client
@@ -9,7 +9,7 @@ ansible -m shell -a 'python -v' client/all
 ansible -m raw -a '/usr/bin/uptime' all
     raw command -> which doesn't require python installation
 ansible -m command -a date -i inventory web1
-ansible -a /cat /etc/hosts' client
+ansible -a 'cat /etc/hosts' client
 ansible all -a uptime
 ansible client -a whoami
 ansible client -b -a whoami
