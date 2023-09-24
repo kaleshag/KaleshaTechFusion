@@ -12,5 +12,5 @@
     ansible.builtin.yum:
       name: nginx
       state: present
-    when: ansible_os_family == "Redhat" or ansible_os_family == "SUSE"
+    when: ansible_os_family == "RedHat" or ansible_os_family == "SUSE"
 ...
