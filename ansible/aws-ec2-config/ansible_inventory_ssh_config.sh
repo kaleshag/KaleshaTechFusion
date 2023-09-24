@@ -31,4 +31,7 @@ ktfmn2 | SUCCESS => {
     "changed": false,
     "ping": "pong"
 }
-ec2-user@ktfcn[Sun Sep 24][09:59 AM]:~$
+
+
+# This will configure the ansible to avoid the Ansible interpreter warnings while executing the ansible ad-hoc commands.
+export ANSIBLE_PYTHON_INTERPRETER="/usr/bin/python3.9"
